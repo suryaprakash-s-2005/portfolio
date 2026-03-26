@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import emailjs from '@emailjs/browser';
 import { FiMail, FiSend, FiLoader } from 'react-icons/fi';
 import { FaLinkedin, FaGithub, FaInstagram } from 'react-icons/fa';
+import { apiUrl } from '../config/api';
 
 const Contact = () => {
     const form = useRef();
@@ -23,7 +24,7 @@ const Contact = () => {
 
         try {
             // 1. Save to Backend (MongoDB)
-            const backendRes = await fetch('http://localhost:5000/api/contact', {
+            const backendRes = await fetch(apiUrl('/api/contact'), {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(data)

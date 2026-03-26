@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { SiLeetcode, SiHackerrank, SiCplusplus, SiPython, SiC, SiJavascript, SiMysql } from 'react-icons/si';
 import { FaJava } from 'react-icons/fa';
 import { FiTrendingUp, FiActivity, FiStar, FiCheckCircle, FiAward } from 'react-icons/fi';
+import { apiUrl } from '../config/api';
 
 const HrIconMap = {
     'C++': SiCplusplus,
@@ -24,7 +25,7 @@ const CodingStats = () => {
     });
 
     useEffect(() => {
-        fetch('http://localhost:5000/api/stats')
+        fetch(apiUrl('/api/stats'))
             .then(res => res.json())
             .then(data => {
                 if (!data.error) setStats(data);
