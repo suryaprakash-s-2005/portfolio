@@ -88,10 +88,10 @@ const About = () => {
                             <div className="flex-grow space-y-6">
                                 <div className="relative pl-6 border-l-2 border-indigo-100 dark:border-indigo-900/50">
                                     <div className="absolute w-3 h-3 bg-indigo-500 rounded-full -left-[7px] top-1.5 ring-4 ring-white dark:ring-gray-900"></div>
-                                    <h4 className="text-base font-bold text-gray-900 dark:text-white">B.E. Computer Science & Engineering <span className="text-indigo-500 dark:text-indigo-400 font-normal text-sm pl-1">(Pre-Final Year)</span></h4>
+                                    <h4 className="text-base font-bold text-gray-900 dark:text-white">B.E. Computer Science & Engineering <span className="text-indigo-500 dark:text-indigo-400 font-normal text-sm pl-1">(Final Year)</span></h4>
                                     <p className="text-indigo-600 dark:text-indigo-400 text-sm font-medium mb-1 mt-1">Velammal College of Engineering and Technology, Madurai</p>
                                     <p className="text-sm text-gray-500 dark:text-gray-400 mb-2">2023 - 2027</p>
-                                    <p className="text-xs font-semibold text-gray-700 dark:text-gray-300 bg-gray-100 dark:bg-gray-800 w-fit px-3 py-1 rounded-full">CGPA: 8.72 (up to 5th semester)</p>
+                                    <p className="text-xs font-semibold text-gray-700 dark:text-gray-300 bg-gray-100 dark:bg-gray-800 w-fit px-3 py-1 rounded-full">CGPA: 8.67 (up to 6th semester)</p>
                                 </div>
                                 <div className="relative pl-6 border-l-2 border-gray-100 dark:border-gray-800">
                                     <div className="absolute w-3 h-3 bg-gray-300 dark:bg-gray-600 rounded-full -left-[7px] top-1.5 ring-4 ring-white dark:ring-gray-900"></div>

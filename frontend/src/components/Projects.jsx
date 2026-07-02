@@ -4,6 +4,22 @@ import { FiGithub, FiExternalLink, FiCode, FiImage, FiX } from 'react-icons/fi';
 
 const projects = [
     {
+        title: "Watch-2-Gether",
+        description: "A real-time synchronized video-watching web application that allows friends to create private viewing rooms, watch videos together synchronously, chat in real-time, manage dynamic playlists, view social activities, and analyze viewing analytics on a sleek dashboard.",
+        tech: ["React", "Node.js", "Express", "MongoDB", "Socket.io", "Tailwind CSS", "JWT"],
+        github: "https://github.com/suryaprakash-s-2005/watch-2-gether",
+        live: "https://watch-2-gether-live.vercel.app/",
+        image: "/projects/watch-2-gether.png"
+    },
+    {
+        title: "Student Score Predictor",
+        description: "An end-to-end Machine Learning system that predicts a student's exam score based on academic and behavioral factors. Features a complete ML pipeline from data acquisition to deployment with an interactive Streamlit web app for real-time predictions and 95% confidence intervals.",
+        tech: ["Python", "scikit-learn", "Streamlit", "Pandas", "NumPy", "Jupyter"],
+        github: "https://github.com/suryaprakash-s-2005/student-score-predictor",
+        live: "https://student-score-predictor-ai.streamlit.app/",
+        image: "/projects/student-score-predictor.png"
+    },
+    {
         title: "PixelFeed",
         description: "A MERN stack website which lets users create images using AI or manual upload and post them to a community feed. Features liking, downloading, and customizable profiles.",
         tech: ["MERN Stack", "Cloudflare AI", "Tailwind CSS"],
@@ -20,20 +36,28 @@ const projects = [
         image: "/projects/budgetpal.png"
     },
     {
-        title: "Recipe Finder",
-        description: "Lets users search for meals, read their recipes, and add meals to their favorites. Built entirely with React and TheMealDB API.",
-        tech: ["React.js", "Node.js", "JavaScript", "TheMealDB API"],
-        github: "https://github.com/suryaprakash-s-2005/Recipe-Finder",
-        live: "https://findrecipes.vercel.app/",
-        image: "/projects/recipe-finder.png"
-    },
-    {
         title: "IMDb's Broke Clone",
         description: "Movie search engine using the OMDb API. Read short storylines and add movies to favorites efficiently without requiring a backend.",
         tech: ["React.js", "Node.js", "JavaScript", "OMDb API"],
         github: "https://github.com/suryaprakash-s-2005/IMDb-Broke-Clone",
         live: "https://imdb-broke-clone.vercel.app/",
         image: "/projects/imdb-broke-clone.png"
+    },
+    {
+        title: "Offroad Odyssey",
+        description: "An immersive 3D car simulator created to deliver an excellent offroad racing experience.",
+        tech: ["Unity3D", "C#"],
+        github: "https://github.com/suryaprakash-s-2005/Offroad-Odyssey",
+        live: "", // Unity projects might not have a web live link
+        image: "/projects/offroad-odyssey.png"
+    },
+    {
+        title: "Recipe Finder",
+        description: "Lets users search for meals, read their recipes, and add meals to their favorites. Built entirely with React and TheMealDB API.",
+        tech: ["React.js", "Node.js", "JavaScript", "TheMealDB API"],
+        github: "https://github.com/suryaprakash-s-2005/Recipe-Finder",
+        live: "https://findrecipes.vercel.app/",
+        image: "/projects/recipe-finder.png"
     },
     {
         title: "PlanIt",
@@ -58,14 +82,6 @@ const projects = [
         github: "https://github.com/suryaprakash-s-2005/Calculator",
         live: "https://cantmathtoday.vercel.app/",
         image: "/projects/calculator.png"
-    },
-    {
-        title: "Offroad Odyssey",
-        description: "An immersive 3D car simulator created to deliver an excellent offroad racing experience.",
-        tech: ["Unity3D", "C#"],
-        github: "https://github.com/suryaprakash-s-2005/Offroad-Odyssey",
-        live: "", // Unity projects might not have a web live link
-        image: "/projects/offroad-odyssey.png"
     }
 ];
 

@@ -46,32 +46,47 @@ const certificationsData = [
         description: "Building responsive user interfaces tailored for Java-based backend integration.",
         image: "/certificates/frontend-for-java-fullstack-development-board-infinity.jpg"
     },
-    // Data & Databases
+    {
+        title: "React Certificate",
+        issuer: "Scaler",
+        domain: "Programming",
+        description: "Comprehensive training on building modern single-page applications with React.",
+        image: "/certificates/react-certificate-scaler.png"
+    },
+    {
+        title: "Node.js Certificate",
+        issuer: "Scaler",
+        domain: "Programming",
+        description: "Server-side JavaScript development covering Express, APIs, and asynchronous programming.",
+        image: "/certificates/nodejs-certificate-scaler.png"
+    },
+    // Databases
     {
         title: "Introduction to SQL",
         issuer: "University of Michigan",
-        domain: "Data & Databases",
+        domain: "Databases",
         description: "Database queries, data manipulation, and relational database design.",
         image: "/certificates/introduction-to-sql-university-of-michigan.jpg"
     },
     {
         title: "MongoDB",
         issuer: "MongoDB",
-        domain: "Data & Databases",
+        domain: "Databases",
         description: "NoSQL database architecture, CRUD operations, and data modeling.",
         image: "/certificates/mongodb.jpg"
     },
+    // Data Science
     {
         title: "Data Science for Beginners",
         issuer: "Board Infinity",
-        domain: "Data & Databases",
+        domain: "Data Science",
         description: "Introduction to data analysis, visualization, and statistical modeling.",
         image: "/certificates/datascience-for-beginners-board-infinity.jpg"
     },
     {
         title: "Power BI Data Analyst",
         issuer: "Microsoft",
-        domain: "Data & Databases",
+        domain: "Data Science",
         description: "Data visualization, dashboard creation, and business intelligence reporting.",
         image: "/certificates/power-bi-data-analyst-microsoft.jpg"
     },
@@ -122,7 +137,7 @@ const certificationsData = [
     }
 ];
 
-const categories = ["All", "Programming", "Data & Databases", "Cloud & Security", "Testing", "Enterprise & Automation"];
+const categories = ["All", "Programming", "Databases", "Data Science", "Cloud & Security", "Testing", "Enterprise & Automation"];
 
 const Certifications = () => {
     const [activeTab, setActiveTab] = useState("All");

@@ -47,7 +47,12 @@ router.get('/', async (req, res) => {
         // Helper function to safely fetch HackerRank JSON
         const safeFetchHR = async (url) => {
             try {
-                const hrRes = await fetch(url);
+                const hrRes = await fetch(url, {
+                    headers: {
+                        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0',
+                        'Accept': 'application/json'
+                    }
+                });
                 if (!hrRes.ok) return {};
                 const text = await hrRes.text();
                 try {
@@ -57,14 +62,19 @@ router.get('/', async (req, res) => {
         };
 
         const hrBadgesData = await safeFetchHR('https://www.hackerrank.com/rest/hackers/4160suryaprakash/badges');
+        let hrBadges = [];
+        let hrStars = 0;
+        let hrChallenges = 0;
 
         if (hrBadgesData.models) {
             hrBadges = hrBadgesData.models.map(badge => ({
                 name: badge.badge_name,
                 stars: badge.stars,
-                icon: badge.icon
+                icon: badge.icon?.replace('http:', 'https:') || null,
+                solved: badge.solved || 0
             }));
             hrStars = hrBadgesData.models.reduce((acc, curr) => acc + curr.stars, 0);
+            hrChallenges = hrBadgesData.models.reduce((acc, curr) => acc + (curr.solved || 0), 0);
         }
 
         res.json({
@@ -77,6 +87,7 @@ router.get('/', async (req, res) => {
             hackerrank: {
                 badges: hrBadges,
                 stars: hrStars,
+                challenges: hrChallenges || 0,
             }
         });
     } catch (error) {
