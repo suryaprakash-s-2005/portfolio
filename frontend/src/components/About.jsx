@@ -48,7 +48,7 @@ const About = () => {
                                     <h3 className="text-2xl font-bold text-gray-900 dark:text-white">About Me</h3>
                                 </div>
                                 <a 
-                                    href="/resume.pdf" 
+                                    href="/Surya_Prakash_S_Resume.pdf" 
                                     download="Surya_Prakash_S_Resume.pdf"
                                     className="hidden sm:flex items-center gap-2 px-6 py-2.5 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold rounded-full transition-all shadow-md hover:shadow-lg hover:-translate-y-0.5"
                                 >
@@ -61,7 +61,7 @@ const About = () => {
 
                             {/* Mobile Download Button */}
                             <a 
-                                href="/resume.pdf" 
+                                href="/Surya_Prakash_S_Resume.pdf" 
                                 download="Surya_Prakash_S_Resume.pdf"
                                 className="sm:hidden flex w-full justify-center items-center gap-2 px-6 py-3 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold rounded-full transition-all shadow-md"
                             >
