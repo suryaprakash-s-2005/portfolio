@@ -112,6 +112,13 @@ const certificationsData = [
         description: "Core concepts of information security, threat landscapes, and mitigation strategies.",
         image: "/certificates/cybersecurity-for-beginners-microsoft.jpg"
     },
+    {
+        title: "Cybersecurity Essentials",
+        issuer: "Cisco",
+        domain: "Cloud & Security",
+        description: "Foundational cybersecurity knowledge covering network security, threat detection, and risk management.",
+        image: "/certificates/cybersecurity-essentials.jpg"
+    },
     // Testing
     {
         title: "Software Testing",
