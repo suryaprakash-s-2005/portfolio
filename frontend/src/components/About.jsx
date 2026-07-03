@@ -49,7 +49,7 @@ const About = () => {
                                 </div>
                                 <a 
                                     href="/resume.pdf" 
-                                    download="Surya_Prakash_Resume.pdf"
+                                    download="Surya_Prakash_S_Resume.pdf"
                                     className="hidden sm:flex items-center gap-2 px-6 py-2.5 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold rounded-full transition-all shadow-md hover:shadow-lg hover:-translate-y-0.5"
                                 >
                                     <FiDownloadCloud size={18} /> Download Resume
@@ -62,7 +62,7 @@ const About = () => {
                             {/* Mobile Download Button */}
                             <a 
                                 href="/resume.pdf" 
-                                download="Surya_Prakash_Resume.pdf"
+                                download="Surya_Prakash_S_Resume.pdf"
                                 className="sm:hidden flex w-full justify-center items-center gap-2 px-6 py-3 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold rounded-full transition-all shadow-md"
                             >
                                 <FiDownloadCloud size={18} /> Download Resume

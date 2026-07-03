@@ -47,7 +47,7 @@ const Hero = () => {
                     </Link>
                     <a
                         href="/resume.pdf"
-                        download="Surya_Prakash_Resume.pdf"
+                        download="Surya_Prakash_S_Resume.pdf"
                         className="flex items-center gap-2 bg-gradient-to-r from-purple-500 to-indigo-600 hover:from-purple-600 hover:to-indigo-700 text-white border border-transparent px-8 py-4 rounded-full font-semibold transition-all transform hover:scale-105 shadow-lg w-full sm:w-auto justify-center"
                     >
                         Resume <FiDownloadCloud />
